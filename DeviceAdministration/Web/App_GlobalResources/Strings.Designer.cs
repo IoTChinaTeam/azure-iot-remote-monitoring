@@ -3563,15 +3563,6 @@ namespace GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MSISDN.
-        /// </summary>
-        public static string MSISDN {
-            get {
-                return ResourceManager.GetString("MSISDN", resourceCulture);
-            }
-        }
-		
-        /// <summary>
         ///   Looks up a localized string similar to Months.
         /// </summary>
         public static string MonthPlural {
@@ -3604,6 +3595,15 @@ namespace GlobalResources {
         public static string MoveUp {
             get {
                 return ResourceManager.GetString("MoveUp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MSISDN.
+        /// </summary>
+        public static string MSISDN {
+            get {
+                return ResourceManager.GetString("MSISDN", resourceCulture);
             }
         }
         
@@ -3941,20 +3941,20 @@ namespace GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Operator Code.
-        /// </summary>
-        public static string OperatorCode {
-            get {
-                return ResourceManager.GetString("OperatorCode", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to OPERATIONS.
         /// </summary>
         public static string OperationsHeader {
             get {
                 return ResourceManager.GetString("OperationsHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operator Code.
+        /// </summary>
+        public static string OperatorCode {
+            get {
+                return ResourceManager.GetString("OperatorCode", resourceCulture);
             }
         }
         
@@ -5372,6 +5372,15 @@ namespace GlobalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Super Administrator.
+        /// </summary>
+        public static string SuperAdminRole {
+            get {
+                return ResourceManager.GetString("SuperAdminRole", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to There was a conflict while saving the data. Please verify the data and try again..
         /// </summary>
         public static string TableDataSaveConflictErrorMessage {
@@ -5640,7 +5649,7 @@ namespace GlobalResources {
                 return ResourceManager.GetString("UpdateTwin", resourceCulture);
             }
         }
-		
+        
         /// <summary>
         ///   Looks up a localized string similar to Upload.
         /// </summary>

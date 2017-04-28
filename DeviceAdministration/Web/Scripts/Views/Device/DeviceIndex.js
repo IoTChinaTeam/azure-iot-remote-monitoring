@@ -172,10 +172,6 @@
                     if (!data) {
                         return "";
                     }
-                    var separatorIndex = data.indexOf('@');
-                    if (separatorIndex > 0) {
-                        return htmlEncode(data.slice(0,separatorIndex));
-                    }
                     return htmlEncode(data);
                 },
                 searchable: false,
