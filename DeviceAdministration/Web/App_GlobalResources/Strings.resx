@@ -1528,8 +1528,7 @@
     <comment>Tile subheading.</comment>
   </data>
   <data name="ApiRegistrationTitle" xml:space="preserve">
-    <value>Jasper API Registration</value>
-    <comment>Panel heading. {Locked="Jasper"}{Locked="API"}</comment>
+    <value>API Registration</value>
   </data>
   <data name="CellularConnViewTitle" xml:space="preserve">
     <value>Cellular Conn</value>
@@ -1775,9 +1774,6 @@
   </data>
   <data name="ApiRegistrationSelectOptionInitial" xml:space="preserve">
     <value>Select provider</value>
-  </data>
-  <data name="ApiRegistrationTitle" xml:space="preserve">
-    <value>API Registration</value>
   </data>
   <data name="EricssonHelpLink" xml:space="preserve">
     <value>https://www.ericsson.com/microsoft-iot</value>
@@ -2671,5 +2667,9 @@
   <data name="CellularInformationNotLocaledOption" xml:space="preserve">
     <value>-- select a locale --</value>
     <comment>Dropdown label.</comment>
+  </data>
+  <data name="SuperAdminRole" xml:space="preserve">
+    <value>Super Administrator</value>
+    <comment>Label</comment>
   </data>
 </root>

@@ -2,6 +2,7 @@
 @using Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.Helpers
 @using Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.Security
 @using GlobalResources
+@using Microsoft.Azure.Devices.Applications.RemoteMonitoring.Common.Helpers
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,17 +76,21 @@
                                 <span class="account-avatar"></span>
                                 <span class="account">
                                     <span class="account-name">@PrincipalHelper.GetEmailAddress(User)</span>
-                                    @if (User.IsInRole("Admin"))
+                                    @if (IdentityHelper.IsSuperAdmin())
                                     {
-                                        <span class="account-subtitle">@Strings.AdministratorRole</span>
+                                        <span class="account-subtitle">@Strings.SuperAdminRole</span>
+                                    }
+                                    else if (User.IsInRole("Admin"))
+                                    {
+                                    <span class="account-subtitle">@Strings.AdministratorRole</span>
                                     }
                                     else if (User.IsInRole("ReadOnly"))
                                     {
-                                        <span class="account-subtitle">@Strings.ReadOnlyRole</span>
+                                    <span class="account-subtitle">@Strings.ReadOnlyRole</span>
                                     }
                                     else
                                     {
-                                        <span class="account-subtitle">@Strings.ImplicitReadOnlyRole</span>
+                                    <span class="account-subtitle">@Strings.ImplicitReadOnlyRole</span>
                                     }
                                 </span>
                             </a>
